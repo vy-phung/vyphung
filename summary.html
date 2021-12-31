@@ -10,16 +10,21 @@
             margin-top: -25px;
             margin-left: -250px;
             font-style: italic;
+            color: rgb(33, 78, 177);
+        }
+        .link {
+            color: rgb(33, 78, 177);
+            text-decoration: none;
             font-weight: bolder;
         }
     </style>
 </head>
 <body>
-    <div id = 'contact'> <a href="https://vy-phung.github.io/vyphung/">Back to VyPhung</a></div><h2>RNA-sequence re-analysis for the correlation of <br>
+    <div id = 'contact'> <a class = 'link' href="https://vy-phung.github.io/vyphung/">Back to VyPhung</a></div><h2>RNA-sequence re-analysis for the correlation of <br>
         differential gene expression between fetal and adult brains</h2>
     <h3>Summary</h3>
     <p>I do this project in order to practice and understand deeply how to do genomic data science. <br>
-    You can see its source <a href="https://github.com/vy-phung/genomic-data-science-project-about-fetus-and-adult.git">Github</a>
+    You can see its source <a class = 'link' href="https://github.com/vy-phung/genomic-data-science-project-about-fetus-and-adult.git">Github</a>
     </p> 
     <p>The purpose of this re-analysis is to examine the correlation of differential gene expression between fetal and adult brains, <br>
     which is evaluated through RNA-sequencing. If it has correlation, then count how many up-regulated and down-regulated genes. <br>
@@ -27,29 +32,29 @@
     <p>Moreover, I will use the genomic datasets including not statistically analyzed data, and already statistically analyzed data <br>
     in order to predict and classify some characteristics of samples (gender, age). All of them are done in Python, Google Colab. </p>
     <h3>Links to access</h3>
-    <li>The article <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281298/">"developmental regulation of human cortex transcription between fetus and adult"</a></li> 
-    <li>The article's <a href="http://www.ebi.ac.uk/ena/data/view/PRJNA245228">RNA-seq data</a></li> 
-    <li>The article's <a href="http://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA245228">phenotype meta-data for the samples</a></li> 
+    <li>The article <a class = 'link' href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281298/">"developmental regulation of human cortex transcription between fetus and adult"</a></li> 
+    <li>The article's <a class = 'link' href="http://www.ebi.ac.uk/ena/data/view/PRJNA245228">RNA-seq data</a></li> 
+    <li>The article's <a class = 'link' href="http://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA245228">phenotype meta-data for the samples</a></li> 
     <h3>Brief Overview</h3>
 <ol type="1">
-    <li>Download RNA-seq data vs <a href="https://raw.githubusercontent.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/main/sample_data/pheno_sample.csv">phenotype metadata</a>(checking <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fvy-phung%2Fgenomic-data-science-project-about-fetus-and-adult%2Fmain%2Fcode%2520book.docx&wdOrigin=BROWSELINK">code book.docx</a> for more details)</li>  
-    <li>Use The Galaxy Project to do (checking <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fvy-phung%2Fgenomic-data-science-project-about-fetus-and-adult%2Fmain%2Fcode%2520book.docx&wdOrigin=BROWSELINK">code book.docx</a> for more details):
+    <li>Download RNA-seq data vs <a class = 'link' href="https://raw.githubusercontent.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/main/sample_data/pheno_sample.csv">phenotype metadata</a>(checking <a class = 'link' href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fvy-phung%2Fgenomic-data-science-project-about-fetus-and-adult%2Fmain%2Fcode%2520book.docx&wdOrigin=BROWSELINK">code book.docx</a> for more details)</li>  
+    <li>Use The Galaxy Project to do (checking <a class = 'link' href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fvy-phung%2Fgenomic-data-science-project-about-fetus-and-adult%2Fmain%2Fcode%2520book.docx&wdOrigin=BROWSELINK">code book.docx</a> for more details):
     <ul>
         <li>FASTQ Quality Control</li>
         <li>Alignment with HISAT2</li>
         <li>Get feature count from "featureCounts" in RNA-seq</li>
-        <li>Get tidy data (<a href="https://raw.githubusercontent.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/main/tidy%20data/count.csv">count table</a>)</li>
+        <li>Get tidy data (<a class = 'link' href="https://raw.githubusercontent.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/main/tidy%20data/count.csv">count table</a>)</li>
     </ul>
     </li>
-    <li>Do exploratory analysis and statistical analysis in R (<a href="Correlation-of-differential-gene-expression-between-fetal-and-adult-brains.pdf">PDF</a>)</li>
-    <li>Predict and classify characteristics of samples in <a href="https://github.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/blob/89b25a9e248e643c78c7a497459250a96ed47b62/Predicted_and_classified_genes.ipynb">Python</a></li>
+    <li>Do exploratory analysis and statistical analysis in R (<a class = 'link' href="Correlation-of-differential-gene-expression-between-fetal-and-adult-brains.pdf">PDF</a>)</li>
+    <li>Predict and classify characteristics of samples in <a class = 'link' href="https://github.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/blob/89b25a9e248e643c78c7a497459250a96ed47b62/Predicted_and_classified_genes.ipynb">Python</a></li>
 </ol>
     <h3>Drawback</h3>
     <p>Use 10 samples, which means the sample size is too small to infer for the large population and can be biased</p>
     <h3>Reference</h3>
-    <li><a href="https://www.coursera.org/specializations/genomic-data-science">Genomic Data Science Specialization audit courses</a></li>   
-    <li><a href="https://github.com/friveramariani/GenomicDataScience_FetalAdultBrain.git">friveramariani/GenomicDataScience_FetalAdultBrain.git</a></li>
-    <li><a href="https://github.com/jtleek/datasharing.git">jtleek/datasharing.git</a></li>
-    <li><a href="http://jtleek.com/genstats_site/">jtleek.com/genstats_site/</a></li>
+    <li><a class = 'link' href="https://www.coursera.org/specializations/genomic-data-science">Genomic Data Science Specialization audit courses</a></li>   
+    <li><a class = 'link' href="https://github.com/friveramariani/GenomicDataScience_FetalAdultBrain.git">friveramariani/GenomicDataScience_FetalAdultBrain.git</a></li>
+    <li><a class = 'link' href="https://github.com/jtleek/datasharing.git">jtleek/datasharing.git</a></li>
+    <li><a class = 'link' href="http://jtleek.com/genstats_site/">jtleek.com/genstats_site/</a></li>
 </body>
 </html>
