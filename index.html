@@ -32,10 +32,12 @@
             text-decoration: none;
             font-weight: bolder;
         }
-        .img {position: absolute; left: 60px}
-        .intro {position: absolute; right: 150px; text-align: left;}
-        .he_project{ position: absolute; bottom: 100px; right: 450px; text-align: left ; }
-
+        .img {object-fit: contain ;position: static; margin-left: -70%}
+        .intro {object-fit: contain;position: static; margin-top: -33%;
+            margin-left: 590px; text-align: left;}
+        .he_project{object-fit: contain; position: static; bottom: 100px; margin-left: 590px; text-align: left ; }
+        @media screen and (max-width: 320px) {.img, .intro, .he_project {
+            background-color: white; width: 100%;}}
     </style>
 </head>
 <body>

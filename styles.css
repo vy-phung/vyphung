@@ -9,3 +9,8 @@ body {
     font-size: medium;
 
 }
+@media all and (max-width: 320px) {
+    body {
+       background: white;
+    }
+ }
