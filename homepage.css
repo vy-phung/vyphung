@@ -9,8 +9,3 @@ body {
     font-size: 21px;
     color: rgb(14, 14, 87);
 }
-@media all and (min-width: 320px) {
-    body {
-       background: white;
-    }
- }

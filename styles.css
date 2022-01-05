@@ -1,7 +1,6 @@
 body {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-right: 100px;
     margin-left: 300px;
     background: white;
     text-align: left;
@@ -9,8 +8,9 @@ body {
     font-size: medium;
 
 }
-@media all and (max-width: 320px) {
+@media screen and (min-width: 375px) and (max-width: 1400px) {
     body {
        background: white;
+       margin-left: 10%;
     }
  }
