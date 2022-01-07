@@ -32,25 +32,84 @@
             text-decoration: none;
             font-weight: bolder;
         }
-        .img {object-fit: contain ;position: static; margin-left: -55%;}
-        .intro {object-fit: contain;position: static; margin-top: -520px;
-            margin-left: 590px; text-align: left; font-size: 20px;}
-        .he_project{object-fit: contain; position: static; bottom: 100px; margin-left: 590px; text-align: left ; 
+        .img {position: relative; float: left; 
+            background-color: white;
+            padding-left: 50px;
+            padding-top: 20px;
+            padding-right: 50px;
+            padding-bottom: 20px;
+            border: black solid ; height: 300px; }
+        .intro {position: static; margin-left: 310px; margin-top: 0px; 
+            color: black;
+            background-color: rgb(223, 215, 215);
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            border: black solid ; height: 300px;
+            text-align: left; font-size: 20px;}
+        .he_project{ position: relative; float: left; margin-top: auto; text-align: left ; 
         font-size: 20px;}
-        @media screen and (min-width: 375px) and (max-width: 1400px) {
+        .background1{
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 30px;
+            padding-top: 40px;
+            padding-right: 30px;
+            padding-bottom: 40px; 
+        }
+        .pro1{position: relative ;float: left; top: auto; 
+            margin-right: 70% ;}
+        .pro3{position: relative; float: left; top: auto; 
+            margin-right: 70% ;}    
+        .pro2{position: relative; float: left;  bottom: 320px;
+            margin-left: 40% ;}  
+        .pro4{position: relative; float: right; bottom: 320px; 
+            margin-right: auto 0% ;} 
+        .pro5{position: relative; float: left; bottom: 320px;; 
+            margin-left: 40% ;}    
+        @media screen and (min-width: 375px) and (max-width: 1350px) {
             .img{
                 width: 100%;
-                margin-left: 2%;
+                margin-left: auto;
+                padding: 0px;
 
             }
             .intro{
                 width: 100%;
-                margin-top: 60px;
-                margin-left: 10%;
+                margin-top: 350px;
+                margin-left: auto; 
+                padding: 0;
+                height: 465px;
+                }
+            .he_project{ position: static; margin-top: 0px;
+                margin-bottom: 10px; width: 100%;
+                margin-left: auto;
             }
-            .he_project{
-                margin-bottom: 95px;
-                margin-left: 10%;
+            .pro1{
+                margin-top: auto;
+                margin-left: auto;
+                width: 100%;
+                padding: 0px;
+            }
+            .pro2{ margin-top: 300px;
+                margin-left: auto;
+                padding: 0px;
+                width: 100%;
+            }
+            .pro3{
+                margin-top: auto;
+                margin-left: auto; padding: 0px; width: 100%;
+            }
+            .pro4{
+                margin-top: auto;
+                margin-right: auto; padding: 0px; width: 100%;
+            }
+            .pro5{
+                margin-top: auto;
+                margin-left: auto; padding: 0px; width: 100%;
             }
 
         }
@@ -66,30 +125,21 @@
     <a class="Github" href="mailto:vyphung1901@gmail.com">Email</a>
     </p> </div>
     <hr style="width: 100%;;text-align:center;margin-left:0px;height: 0.5px; background-color: gray">
-    <div class="img"><img src="curious.jpg" height="500px" width="300px" > </div>
+    <div class="img"><img src="curious.jpg" height="300px" width="200px" > </div>
 
-    <div class="intro">
-    <h2>Hey yo,</h2> 
+    <div class="intro"><h2>Hey yo,</h2> 
     <p>
-        I am just a person who is curious about the application of data science and statistics to biology <br>
-        especially molecular biology. At the moment, my concentration is analyzing the biological data in <br>
-        research for the purpose of applying those discoveries to solve social problems. There are lots of <br>
-        things I need to learn, so it is great that I can connect to anyone who is interested in biology, <br>
-        statistics or data science. Moreover, I also like to connect or engage with strangers too because <br>
-        I basically love to laugh, learn and talk about things I haven't known yet. <br> </div>
-    </p> </div>
-
-    <div class="he_project"><h2>Personal projects</h2>
-    <p>
-        Cancer diagnosis <a class = 'project'href="https://github.com/vy-phung/Cancer-diagnosis.git">breast tissues</a> <br>
-        Data analysis <a class="project" href="https://github.com/vy-phung/Data-analysis.git">Medical Appointment</a> <br> 
-        Genomic data science <a class="project" href="/vyphung/summary.html">Re-analysis RNA-seq</a> <br>
-        My bioinformatics note <a class="project" href="https://github.com/vy-phung/My-bioinformatics-note.git">at Oxford University Clinical Research Unit</a> <br>
-        IBM Watson    
-        <a class="project" href="https://github.com/vy-phung/IBM-Watson-Studio.git">Studio:</a> 
-        <li><a class="IBM" href="https://github.com/vy-phung/IBM-Watson-Studio/blob/b9841942c4b615b73d125518fc7ab530db15382c/House%20Sales%20in%20King%20County,%20USA%20data%20analysis.ipynb">House sales data analysis</a> <br> </li>
-        <li><a class="IBM" href="https://github.com/vy-phung/IBM-Watson-Studio/blob/b9841942c4b615b73d125518fc7ab530db15382c/Data%20visualization.ipynb">Data visualization</a> <br> </li>
-        <li><a class="IBM" href="https://github.com/vy-phung/IBM-Watson-Studio/blob/b9841942c4b615b73d125518fc7ab530db15382c/Basic_language_translator_and_speech_to_text.ipynb">Basic language translator and speech to text</a> <br> </li>
-    </p> </div>
-</body>
+        I am just a person who is curious about the application of data science and statistics to biology especially molecular biology. 
+        At the moment, my concentration is analyzing the biological data in research for the purpose of applying those discoveries to solve social problems. 
+        There are lots of things I need to learn, so it is great that I can connect to anyone who is interested in biology, statistics or data science. 
+        Moreover, I also like to connect or engage with strangers too because I basically love to laugh, learn and talk about things I haven't known yet. </div>
+    </p> <br>
+    <div class="he_project"><h2>Personal projects</h2> </div>
+       <div class="pro1"><p class="background1">Cancer diagnosis <a class = 'project'href="https://github.com/vy-phung/Cancer-diagnosis.git">breast tissues</a> </p></div>
+       <div class="pro3"><p class="background1">Genomic data science <a class="project" href="/vyphung/summary.html"> RNA-seq <br>Re-analysis</a> </p> </div>
+       <div class="pro2"><p class="background1">Data analysis <a class="project" href="https://github.com/vy-phung/Data-analysis.git">Medical Appointment</a>  </p> </div>
+       <div class="pro4"><p class="background1">IBM Watson <a class="project" href="https://github.com/vy-phung/IBM-Watson-Studio.git">Studio</a></p> </div>
+       <div class="pro5"><p class="background1">My bioinformatics note <a class="project" href="https://github.com/vy-phung/My-bioinformatics-note.git">at Oxford<br> University Clinical Research Unit</a> </p> </div>
+      
+    </body>
 </html>
