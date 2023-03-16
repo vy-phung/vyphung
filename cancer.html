@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Diagnosis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #contact {
+            margin-top: -28px;
+            margin-left: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: large;
+        }
+        .header{color: rgb(45, 45, 207);}
+        .link{text-decoration: none; color: rgb(33, 78, 177);}
+        .link:hover{text-decoration: underline;}
+        .word{font-size: 20px;}
+        .sample{font-size: 20px; color: rgb(33, 78, 177);}
+        .image{padding: 5px; background-color: whitesmoke;}
+        .image:hover{box-shadow: #e3e3e3 7px 7px 5px;
+        height: 50%; width: 100%;}
+        .pad1{padding: 5px; background-color: rgb(240, 234, 234);box-shadow: #e3e3e3 7px 7px 5px}
+        .pad2{padding: 5px; background-color: whitesmoke;box-shadow: #e3e3e3 7px 7px 5px}
+        
+        @media screen and (min-width: 325px) and (max-width: 1400px) {
+            .image:hover{box-shadow: #e3e3e3 5px 5px 3px;
+        height: 40%; width: 120%;}
+        }
+    </style>
+</head>
+<body>
+    <div id = 'contact'> <a class = 'link' href="https://vy-phung.github.io/vyphung/">Back to Vy Phung</a></div>
+    <hr style="width: 100%;;position:relative;float:left;margin-left:auto;height: 0.5px; background-color: black">
+    <h1 class="header">Cancer Diagnosis</h1>
+    <div class="pad2">
+    <h2>Breast Cancer Wisconsin (Diagnostic) Data Set</h2>
+    <p class="word">In this personal project, the main purpose is classifying benign or malignant of breast tissues</p>
+    <h2>Brief Overview</h2>
+    <p>
+        <ol type = "1" class="word">
+            <li>Data preprocessing and data visualization</li>
+            <li>Linear regression</li>
+            <li>Classification by using K-nearest neighbor (KNN) and Support Vector Machines (SVM)</li>
+            <li>Model Evaluation</li>    
+        </ol>
+    </p>
+    <p class="word">All of the steps of brief overview are done on <a class = "link" href="https://github.com/vy-phung/Cancer-diagnosis/blob/master/Breast_Cancer_Wisconsin_(Diagnostic)_Data_Set.ipynb">Google Colab</a> <br>
+        Website for interactive visualization <a class = "link" href="https://cancer-plotly.herokuapp.com/">here</a> </p>
+    </div>
+    <br>
+    <div class="pad1">
+    <h2>The sample of interactive visualization</h2>
+    <p class="sample">Linear regression visualization</p>
+    <img class="image"src="linear.png" height="200" width="750">
+    <p class="sample">Confusion matrix visualization</p>
+    <img class="image"src="confusion.png" height="200" width="750">
+    </div>
+</body>
+</html>

@@ -1,11 +1,17 @@
 body {
-    margin-top: 25px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 20%;
     background: white;
     text-align: left;
     font-family: Helvetica;
     font-size: medium;
 
 }
+@media screen and (min-width: 375px) and (max-width: 1400px) {
+    body {
+       background: white;
+       margin-left: 10%;
+    }
+ }

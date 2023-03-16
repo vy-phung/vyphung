@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Genomic data science</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #contact {
+            margin-top: -28px;
+            margin-left: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: large;
+        }
+        .link {
+            color: rgb(33, 78, 177);
+            text-decoration: none;
+        }
+        .link:hover{text-decoration: underline;}
+        
+        @media screen and (min-width: 325px) and (max-width: 1400px) {
+            #contact{
+                width: 100%;
+                margin-left: auto;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id = 'contact'> <a class = 'link' href="https://vy-phung.github.io/vyphung/">Back to Vy Phung</a></div>
+    <hr style="width: 100%;;position:relative;float:left;margin-left:auto;height: 0.5px; background-color: black">   
+    <h2>RNA-sequence re-analysis for the correlation of <br>
+        differential gene expression between fetal and adult brains</h2> 
+    <h3>Summary</h3>
+    <p>I do this project in order to practice and understand deeply how to do genomic data science. <br>
+    You can see its source <a class = 'link' href="https://github.com/vy-phung/genomic-data-science-project-about-fetus-and-adult.git">Github</a>
+    </p> 
+    <p>I get the data at the link below to re-analyze. The purpose of this re-analysis is to examine the correlation of differential gene expression between fetal and adult brains, 
+    which is evaluated through RNA-sequencing. If it has correlation, then count how many up-regulated and down-regulated genes. <br>
+    All of them are done in R, RStudio. </p>
+    <p>Moreover, I will use the genomic datasets (already statistically analyzed data) in order to predict and classify some characteristics of samples (gender, age). <br> 
+       All of them are done in Python, Google Colab. </p>
+    
+    <h3>Links to access the data source</h3>
+    <li>The article <a class = 'link' href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281298/">"Developmental regulation of human cortex transcription and its clinical relevance at base resolution"</a></li> 
+    <li>The article's <a class = 'link' href="http://www.ebi.ac.uk/ena/data/view/PRJNA245228">RNA-seq data</a></li> 
+    <li>The article's <a class = 'link' href="http://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA245228">phenotype meta-data for the samples</a></li> 
+    
+    <h3>Brief Overview</h3>
+    <ol type="1">
+    <li>Download RNA-seq data vs <a class = 'link' href="https://raw.githubusercontent.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/main/sample_data/pheno_sample.csv">phenotype metadata</a>(checking <a class = 'link' href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fvy-phung%2Fgenomic-data-science-project-about-fetus-and-adult%2Fmain%2Fcode%2520book.docx&wdOrigin=BROWSELINK">code book.docx</a> for more details)</li>  
+    <li>Use The Galaxy Project to do (checking <a class = 'link' href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fvy-phung%2Fgenomic-data-science-project-about-fetus-and-adult%2Fmain%2Fcode%2520book.docx&wdOrigin=BROWSELINK">code book.docx</a> for more details):
+    <ul><li>FASTQ Quality Control</li>
+        <li>Alignment with HISAT2</li>
+        <li>Get feature count from "featureCounts" in RNA-seq</li>
+        <li>Get tidy data (<a class = 'link' href="https://raw.githubusercontent.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/main/tidy%20data/count.csv">count table</a>)</li>
+    </ul>
+    </li>
+    <li>Do exploratory analysis and statistical analysis in R (<a class = 'link' href="Correlation-of-differential-gene-expression-between-fetal-and-adult-brains.pdf">PDF</a>, <a class = 'link' href="/vyphung/Correlation-of-differential-gene-expression-between-fetal-and-adult-brains.html">HTML</a>)</li>
+    <li>Predict and classify characteristics of samples in <a class = 'link' href="https://github.com/vy-phung/genomic-data-science-project-about-fetus-and-adult/blob/main/Predicted_and_classified_genes.ipynb">Python</a></li>
+    </ol>
+    <h3>Drawback</h3>
+    <p>Use 10 samples, which means the sample size is too small to infer for the large population and can be biased</p>
+    <h3>Reference</h3>
+    <li><a class = 'link' href="https://www.coursera.org/specializations/genomic-data-science">Genomic Data Science Specialization audit courses</a></li>   
+    <li><a class = 'link' href="https://github.com/friveramariani/GenomicDataScience_FetalAdultBrain.git">friveramariani/GenomicDataScience_FetalAdultBrain.git</a></li>
+    <li><a class = 'link' href="https://github.com/jtleek/datasharing.git">jtleek/datasharing.git</a></li>
+    <li><a class = 'link' href="http://jtleek.com/genstats_site/">jtleek.com/genstats_site/</a></li>    
+</body>
+</html>

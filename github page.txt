@@ -1,0 +1,13 @@
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+git branch -M main
+git add . 
+git commit -m "update"
+git push -u origin main
+
+CANER-PLOTLY HEROKU:
+python3 -m pip install click

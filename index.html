@@ -4,33 +4,180 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vy Phung</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        .Github {
+            color: black ;
+            font-size: 22px;
+            font-weight: bolder;
+            font-family: Arial;
+            text-decoration: none;
+            margin-left: auto; transition: 0.3s;
+        }
+        .Github:hover{background-color: white;color: blue;}
+        .name{color: black;}
+        .background{
+            background-color: lightskyblue;
+            padding: 5px;
+            height: 150px; box-shadow: #e3e3e3 4px 4px 2px;
+        }
+        .background:hover{box-shadow: #e3e3e3 7px 7px 5px;border: black solid 2px;}
+        .project {
+            color: rgb(33, 78, 177);
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: bolder;
+        }
+        .project:hover{text-decoration: underline;}
+        .IBM {
+            color: rgb(33, 78, 177);
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .intro {position: static; margin-left: 300px; margin-right:300px ;margin-top: 30px; 
+            color: black;
+            background-color: white;
+            text-align: center ; font-size: 21px;}  
+        .intro:hover{font-size: 25px;}    
+        .he_project{ position: relative; float: left;margin-left: 650px; margin-right: 355px; margin-bottom: 15px;
+            margin-top: auto; text-align: center; font-family: Arial, Helvetica, sans-serif ; 
+        font-size: 20px;}
+        .he_project:hover{font-size: 25px;}
+        .pro1{position: relative ;float: left; top: auto; 
+            margin-left: auto ;
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 50px;
+            padding-top: 20px;
+            padding-right: 70px;
+            padding-bottom: 20px;
+            box-shadow: #e3e3e3 4px 4px 2px;}
+        .pro1:hover{box-shadow: #e3e3e3 7px 7px 5px;border: black solid 2px;}        
+        .pro2{position: relative; float: left; top: 0px; 
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 43px;
+            padding-top: 20px;
+            padding-right: 50px;
+            padding-bottom: 20px;
+            margin-left: 100px ; box-shadow: #e3e3e3 4px 4px 2px;} 
+        .pro2:hover{box-shadow: #e3e3e3 7px 7px 5px;border: black solid 2px;}       
+        .pro3{position: relative; float: left;  top: auto; margin-left: 115px ;
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 40px;
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 20px;box-shadow: #e3e3e3 4px 4px 2px;}  
+        .pro3:hover{box-shadow: #e3e3e3 7px 7px 5px;border: black solid 2px;}    
+        .pro4{position: relative; float: right; top: 0px; 
+            margin-right: 5px ;
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 80px;
+            padding-top: 19px;
+            padding-right: 90px;
+            padding-bottom: 19px;box-shadow: #e3e3e3 4px 4px 2px;}
+        .pro4:hover{box-shadow: #e3e3e3 7px 7px 5px;border: black solid 2px;}    
+            @media screen and (min-width: 1024px) and (max-width: 1580px) {
+            .intro{
+                width: 100%;
+                margin-top: auto; position: relative; float: left;
+                margin-left: 5px;
+                margin-bottom: auto; text-align: left;
+                }
+            .he_project{ position: static; margin-top: 0px;
+                margin-bottom: 10px; width: 100%;
+                margin-left: auto;
+            }
+            .pro1{ position: relative; float: left;
+                margin-top: auto;
+                margin-left: 2px;
+                width: 40%; margin-bottom: 10px;
+                padding: 5px;
+            }
+            .pro2{ position: relative; float: right;
+                margin-top: auto;
+                margin-right: 2px;
+                padding: 5px;
+                width: 40%;
+            }
+            .pro3{ position: relative; float: right;
+                margin-top: 10px;
+                margin-right: 2px; padding: 5px; width: 40%; 
+            }
+            .pro4{ position: relative; float: left;
+                margin-top: auto;
+                margin-left:2px; padding: 5px; width: 40%; 
+                margin-bottom: 25px;
+            }
+        }               
+            
+        @media screen and (min-width: 325px) and (max-width: 1020px) {
+            .intro{
+                width: 100%;
+                margin-top: auto;
+                margin-left: auto; text-align: left;
+                }
+            .he_project{ position: static; margin-top: 0px;
+                margin-bottom: 10px; width: 100%;
+                margin-left: auto;
+            }
+            .pro1{
+                margin-top: auto;
+                margin-left: auto;
+                width: 100%;
+                padding: 5px; margin-bottom: 20px;
+            }
+            .pro2{ margin-top: auto;
+                margin-left: auto;
+                padding: 5px;
+                width: 100%; margin-bottom: 20px;
+            }
+            .pro3{
+                margin-top: auto;
+                margin-left: auto; padding: 5px; width: 100%; margin-bottom: 20px;
+            }
+            .pro4{
+                margin-top: auto; position: relative; float: left;
+                margin-left: auto; padding: 5px; width: 100%; margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Vy K Phung</h1>
+    <div class="background">
+    <h1 class="name">Vy K Phung</h1>
     <p>
-    <a href="https://github.com/vy-phung">Github</a> |
-    <a href="https://www.linkedin.com/in/vy-phung-41215a179/">Linkedin</a> | 
-    <a href="/vyphung/resume.html">Résumé</a>
-    </p>
-    <h2>My profile</h2>
+    <a class="Github" href="https://github.com/vy-phung">Github</a> |  
+    <a class="Github" href="https://www.linkedin.com/in/vy-phung-41215a179/">Linkedin</a> |   
+    <a class="Github" href="MY RESUME.pdf">Résumé</a> |  
+    <a class="Github" href="mailto:vyphung1901@gmail.com">Email</a>
+    </p> </div>
+    <hr style="width: 100%;;text-align:center;margin-left:0px;height: 0.3px; background-color: whitesmoke">
+
+    <div class="intro"><h2>Hey yo, <img src="hi.jpg" height="50px" width="70px" ></h2> 
     <p>
-        I am just a person who is curious about the application of data science and statistics to biology especially molecular biology. <br>
-        At the moment, my concentration is analyzing the biological data in research for the purpose of applying those discoveries to solve social problems. <br> 
-        There are lots of things I need to learn, so it is great that I can connect to anyone who is interested in biology, statistics or data science. <br>
-        Moreover, I also like to connect or engage with strangers too because I basically love to laugh, learn and talk about things I haven't known yet. <br>
-    </p>
-    <h2>Personal projects</h2>
-    <p>
-        Data analysis:
-        <a href="https://github.com/vy-phung/Data-analysis.git">Medical Appointment</a> <br>
-        Genomic data science:  
-        <a href="https://github.com/vy-phung/genomic-data-science-project-about-fetus-and-adult.git">Re-analysis RNA-seq</a> <br>
-        IBM Watson Studio: 
-        <a href="https://github.com/vy-phung/IBM-Watson-Studio.git"> Watson Studio</a>
-        <li><a href="https://github.com/vy-phung/IBM-Watson-Studio/blob/b9841942c4b615b73d125518fc7ab530db15382c/House%20Sales%20in%20King%20County,%20USA%20data%20analysis.ipynb">House sales data analysis</a></li>
-        <li><a href="https://github.com/vy-phung/IBM-Watson-Studio/blob/b9841942c4b615b73d125518fc7ab530db15382c/Data%20visualization.ipynb">Data visualization</a></li>
-        <li><a href="https://github.com/vy-phung/IBM-Watson-Studio/blob/b9841942c4b615b73d125518fc7ab530db15382c/Basic_language_translator_and_speech_to_text.ipynb">Basic language translator and speech to text</a></li>
-    </p>
-</body>
+        I am Vy. I am curious about the application of data science or computer science to biology especially molecular biology. 
+        At the moment, my concentration is bioinformatics and how it can use to solve social problems. 
+        There are lots of things I need to learn, so it is great that I can connect to anyone who is also interested in that. 
+        Besides science, I just like to laugh and self-learn new stuffs. </div>
+    </p> 
+    <hr style="width: 100%;;text-align:center;margin-left:0px;margin-top:50px ;height: 0.3px; background-color: whitesmoke">
+    <div class="he_project"><h2>Personal projects</h2> </div>
+       <div class="pro1"><p>Cancer diagnosis <br> <a class = 'project'href="/vyphung/cancer.html">breast tissues</a> </p></div>
+       <div class="pro2"><p >Data analysis <br> <a class="project" href="https://github.com/vy-phung/Data-analysis.git">Medical Appointment</a>  </p> </div>
+       <div class="pro3"><p >Genomic data science <a class="project" href="/vyphung/summary.html"><br>RNA-seq Re-analysis</a> </p> </div>
+       <div class="pro4"><p >IBM Watson <br> <a class="project" href="/vyphung/watson_studio.html">Studio</a></p> </div>
+       </body>
 </html>
+
